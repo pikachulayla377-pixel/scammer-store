@@ -6,8 +6,9 @@ import SocialFloat from "@/components/SocialFloat/SocialFloat";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
-  title: "Zynx Wallpapers | Anime PFPs & Wallpapers",
-  description: "Free anime wallpapers and PFPs. High quality, fast, and aesthetic.",
+  title: "Scammer Store – MLBB  Sellers",
+  description:
+    "Scammer Store helps MLBB players identify fake diamond topup websites. stay safe while topping up Mobile Legends.",
 };
 
 export default function RootLayout({

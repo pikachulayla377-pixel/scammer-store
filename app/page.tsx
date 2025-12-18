@@ -2,19 +2,12 @@
 import HomeSection from "@/components/Home/Home";
 
 export const metadata = {
-  title: "ZynxAnime - Free Anime Wallpapers & Live Backgrounds",
+  title: "Scammer Store – MLBB  Sellers",
   description:
-    "Discover high-quality anime wallpapers, live backgrounds, and PFPs from popular anime like Naruto, One Piece, Demon Slayer, and more — all free to download.",
+    "Scammer Store helps MLBB players  stay safe while topping up Mobile Legends.",
   keywords: [
-    "anime wallpapers",
-    "live anime backgrounds",
-    "anime PFP",
-    "ZynxAnime",
-    "Naruto wallpaper",
-    "One Piece wallpaper",
-    "Demon Slayer wallpaper",
-    "Attack on Titan wallpaper",
-    "anime 4K wallpapers",
+    "MLBB diamond topup",
+
   ],
 };
 
