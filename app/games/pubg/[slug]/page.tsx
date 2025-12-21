@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import logo from "@/public/logo.png";
-import MLBBPurchaseGuide from "../../../components/HelpImage/MLBBPurchaseGuide";
 
 import Loader from "@/components/Loader/Loader";
 export default function GameDetailPage() {
@@ -308,9 +307,7 @@ export default function GameDetailPage() {
         </button>
       </div>
 
-      <div className="max-w-6xl mx-auto mt-6">
-        <MLBBPurchaseGuide />
-      </div>
+      
     </section>
   );
 }
