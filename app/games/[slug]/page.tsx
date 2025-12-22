@@ -20,6 +20,7 @@ export default function GameDetailPage() {
   const [viewMode, setViewMode] = useState<"slider" | "grid">("grid");
   const isBGMI =
   game?.gameName?.toLowerCase() === "pubg mobile";
+  
 
   /* ================= FETCH ================= */
   useEffect(() => {
@@ -179,7 +180,7 @@ export default function GameDetailPage() {
                   }`}
               >
                 <p className="text-sm font-semibold truncate">
-                   {!isBGMI && "💎 "}  {item.itemName}
+                   {!isBGMI && item.itemName !== "Twilight Pass" && "💎 "}  {item.itemName}
                 </p>
 
                 <p className="mt-1 text-lg font-bold text-[var(--accent)]">
@@ -243,7 +244,7 @@ export default function GameDetailPage() {
                 }`}
             >
               <p className="text-sm font-semibold truncate">
-                 {!isBGMI && "💎 "}  {item.itemName}
+                 {!isBGMI &&  item.itemName !== "Twilight Pass" && "💎 "}  {item.itemName}
               </p>
 
               <p className="mt-1 text-lg font-bold text-[var(--accent)]">

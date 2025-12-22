@@ -49,8 +49,8 @@ export default function SocialFloat() {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: "scammers official",
-          text: "Check out scammers official!",
+          title: "scammers official ",
+          text: " scammers official !",
           url: window.location.href,
         });
       } catch (err) {
