@@ -53,7 +53,7 @@ export default function ScrollingNoticeBand() {
       <style>{`
         .scroll-track {
           display: inline-block;
-          animation: scroll-left 18s linear infinite;
+          animation: scroll-left 23s linear infinite;
         }
 
         @keyframes scroll-left {
