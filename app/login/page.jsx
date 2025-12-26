@@ -21,10 +21,14 @@ export default function AuthPage() {
   const minLen = (txt, min) => txt.length >= min;
   const maxLen = (txt, max) => txt.length <= max;
 
+  /* ================= LOGIN ================= */
   const handleLogin = async () => {
     let errs = {};
-    if (!loginData.user.trim()) errs.user = "We need something to scam… email or phone";
-    if (!loginData.password.trim()) errs.password = "Password missing. Scam failed.";
+
+    if (!loginData.user.trim())
+      errs.user = "We need something to scam… email or phone";
+    if (!loginData.password.trim())
+      errs.password = "Password missing. Scam failed.";
 
     if (Object.keys(errs).length) {
       setErrors(errs);
@@ -54,6 +58,7 @@ export default function AuthPage() {
     setTimeout(() => (window.location.href = "/"), 1000);
   };
 
+  /* ================= REGISTER ================= */
   const handleRegister = async () => {
     let errs = {};
 
@@ -96,7 +101,6 @@ export default function AuthPage() {
   return (
     <section className="min-h-screen flex items-center justify-center bg-[var(--background)] p-6 text-[var(--foreground)]">
       <div className="bg-[var(--card)] border border-[var(--border)] shadow-lg rounded-xl p-6 w-full max-w-md">
-
         {/* Header */}
         <h1 className="text-xl font-bold text-center mb-2">
           ScammersOfficial Access Portal
@@ -144,7 +148,7 @@ export default function AuthPage() {
           </p>
         )}
 
-        {/* LOGIN */}
+        {/* ================= LOGIN ================= */}
         {tab === "login" && (
           <div className="space-y-4">
             <input
@@ -179,10 +183,25 @@ export default function AuthPage() {
             >
               Enter the Scam
             </button>
+
+            {/* Switch to Register */}
+            <p className="text-sm text-center text-[var(--muted)] mt-4">
+              New here?{" "}
+              <button
+                onClick={() => {
+                  setErrors({});
+                  setSuccess("");
+                  setTab("register");
+                }}
+                className="text-[var(--accent)] font-semibold hover:underline"
+              >
+                Create an account
+              </button>
+            </p>
           </div>
         )}
 
-        {/* REGISTER */}
+        {/* ================= REGISTER ================= */}
         {tab === "register" && (
           <div className="space-y-4">
             <input
@@ -244,10 +263,24 @@ export default function AuthPage() {
             >
               Join the Scam
             </button>
+
+            {/* Switch to Login */}
+            <p className="text-sm text-center text-[var(--muted)] mt-4">
+              Already trapped?{" "}
+              <button
+                onClick={() => {
+                  setErrors({});
+                  setSuccess("");
+                  setTab("login");
+                }}
+                className="text-[var(--accent)] font-semibold hover:underline"
+              >
+                Login instead
+              </button>
+            </p>
           </div>
         )}
       </div>
     </section>
   );
 }
-    

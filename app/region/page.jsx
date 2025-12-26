@@ -36,13 +36,13 @@ export default function RegionPage() {
   };
 
   return (
-    <section className="min-h-screen pt-24 px-6 bg-[var(--background)] text-[var(--foreground)]">
+    <section className="min-h-screen pt-12 px-6 bg-[var(--background)] text-[var(--foreground)]">
       <div className="max-w-lg mx-auto">
 
         {/* Header */}
         <div className="flex items-center justify-between mb-2">
           <h2 className="text-2xl font-bold">
-            Region Verification Portal
+            Region Verification 
           </h2>
           <HelpImagePopup />
         </div>
